@@ -3,9 +3,6 @@ from datetime import datetime, timedelta
 import time
 
 
-class UserFuckUpException(Exception):
-    pass
-
 def fetch_event_id_from_url(url: str) -> str:
     addr_stripped = url.lstrip("https://tihlde.org/arrangementer/")
     num, _ = addr_stripped.split("/",1)
